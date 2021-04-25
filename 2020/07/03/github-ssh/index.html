@@ -14,21 +14,23 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"tiramacon.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":true,"transition":{"post_block":"flipXIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="配置 github ssh key 解决 ssh: connect to host github com port 22: timed out  配置 github ssh key使用 Git Bash 生成 ssh key  保证在 ~ 路径下 $ cd ~  命令生成 ssh 1234567$ ssh-keygen -t rsa -C &quot;xxxxxx@yy.com&quot;  #">
+  <meta name="description" content="配置 github ssh key 解决 ssh: connect to host github com port 22: timed out">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Github SSH相关配置">
 <meta property="og:url" content="https://tiramacon.github.io/2020/07/03/github-ssh/index.html">
 <meta property="og:site_name" content="Tiramacon&#39;s Tower">
-<meta property="og:description" content="配置 github ssh key 解决 ssh: connect to host github com port 22: timed out  配置 github ssh key使用 Git Bash 生成 ssh key  保证在 ~ 路径下 $ cd ~  命令生成 ssh 1234567$ ssh-keygen -t rsa -C &quot;xxxxxx@yy.com&quot;  #">
+<meta property="og:description" content="配置 github ssh key 解决 ssh: connect to host github com port 22: timed out">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-03T05:58:58.000Z">
-<meta property="article:modified_time" content="2021-04-22T06:10:54.515Z">
+<meta property="article:modified_time" content="2021-04-25T07:11:06.448Z">
 <meta property="article:author" content="Tiramacon">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -192,7 +194,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-22 14:10:54" itemprop="dateModified" datetime="2021-04-22T14:10:54+08:00">2021-04-22</time>
+                <time title="修改时间：2021-04-25 15:11:06" itemprop="dateModified" datetime="2021-04-25T15:11:06+08:00">2021-04-25</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -219,6 +221,8 @@
 <li><a href="#%E9%85%8D%E7%BD%AE-github-ssh-key">配置 github ssh key</a></li>
 <li><a href="#%E8%A7%A3%E5%86%B3-ssh-connect-to-host-github-com-port-22-timed-out">解决 ssh: connect to host github com port 22: timed out</a></li>
 </ul>
+<span id="more"></span>
+
 <h2 id="配置-github-ssh-key"><a href="#配置-github-ssh-key" class="headerlink" title="配置 github ssh key"></a>配置 github ssh key</h2><p>使用 Git Bash 生成 ssh key</p>
 <ul>
 <li><p>保证在 ~ 路径下</p>
@@ -263,8 +267,9 @@
     
 
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/git/" rel="tag"># git</a>
+              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
           </div>
 
         
